@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu Nhóm</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background: url('https://lens.usercontent.google.com/image?vsrid=CPqX5Zrar9ywExACGAEiJGY0NGEwNjNhLTUxNGMtNDdkOS04NWY3LTI3ZjNhNGQ3ZDlmNzIGIgJ0YSgoOLGI0quojJED&gsessionid=L3eJ5OuK2UTPtm2fkD1auObu265Aqh-DzAEHM7D_Oii4jj7GSwTV0w') no-repeat center center/cover;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            margin: 0;
+            font-weight: bold;
+            color: #00008B;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .members, .assignments {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .member, .assignment {
+            width: 48%;
+            padding: 15px;
+            background: #f0f8ff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .member:hover, .assignment:hover {
+            transform: scale(1.05);
+            background-color: #e6f7ff;
+        }
+        .member img, .assignment img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        a {
+            text-decoration: none;
+            color: #00008B;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+        .form-container {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #00008B;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Group 3</h1>
+    <p>Welcome to our team!</p>
+</header>
+
+<div class="container">
+    <!-- Members Section -->
+    <h2>MEMBERS</h2>
+    <div class="members">
+        <div class="member">
+            <img src="https://lens.usercontent.google.com/image?vsrid=CKiByYjj-qKfLhACGAEiJDMwNWM1YTQ2LWFhM2QtNGYyZS05ZmEyLTQ0NDQ4MGNjNGNlODIGIgJ0YSgPOK3uyoipjJED&gsessionid=JlAnoUEE_gXyGUyCDn-dPoBBSwWOr-0EtflI2uaM_RAd0U20fVzGnA" alt="Phạm Hữu Khoa Nguyên">
+            <a href="new1.html" target="_blank">Phạm Hữu Khoa Nguyên</a> - 12SĐ
+        </div>
+        <div class="member">
+            <img src="https://lens.usercontent.google.com/image?vsrid=COKVyYuKx53kMxACGAEiJGRkOGRmZGVjLTc1OTUtNDlkOS04NzJjLWQ0MDdmNjljYzNjZTIGIgJ0YSgaOI2j6o6pjJED&gsessionid=8hZTAAOKnaCOmxCg9f6B3jBueaEGoZxcdQR-J0vahkSbKdM11PPBgQ" alt="Nguyễn Phương Uyên">
+            <a href="LDK2.html" target="_blank">Nguyễn Phương Uyên</a> - 12SĐ
+        </div>
+        <div class="member">
+            <img src="https://lens.usercontent.google.com/image?vsrid=CKab5Z7F9tb3xQEQAhgBIiRjMDk0NThiZC01OTc2LTRhYTItOTRjNC03MTU2ZmE2Y2M1ZjgyBiICdGEoITivkKPdqIyRAw&gsessionid=iEZi1DLZMwFdwcTUT_9PoUr4Ku92h736p7iu-vQEkQcic2QqEm4TxA" alt="Nguyễn Đình Thủy Tiên">
+            <a href="VTMQ2.html" target="_blank">Nguyễn Đình Thủy Tiên</a> - 12SĐ
+        </div>
+        <div class="member">
+            <img src="https://lens.usercontent.google.com/image?vsrid=CMmKiY6D3eWH2gEQAhgBIiRjODRmOTY5MC04NGFmLTQ1NjQtODRmMC04YTdhNTRlMjFjNGUyBiICdGEoIDjN2bHlqIyRAw&gsessionid=EIE3ycToG4v5OfIlLGBUeUVXDj41M52xLpJpYZVe7dOaV4qFqvaODw" alt="Lê Min Thi">
+            <a href="HQTPVP.html" target="_blank">Lê Min Thi</a> - 12SĐ
+        </div>
+        <div class="member">
+            <img src="https://lens.usercontent.google.com/image?vsrid=COKZlfOv8vS7vgEQAhgBIiRiYjVhOTE2Zi0zNTkxLTRiMWQtYTMyNi1lNjA3OWJiZjQ2MTIyBiICdGEoKzjbhf70qIyRAw&gsessionid=vtCj2YLzSwCMU7jO0ctwc4ddEmMQEo89kjsCLIZ0M7A-2t7nQhjf9w" alt="Trần Ngọc Tuyết Nhi">
+            <a href="profile.html" target="_blank">Trần Ngọc Tuyết Nhi</a> - 12SĐ
+        </div>
+    </div>
+
+    <!-- Assignments Section -->
+    <h2>VẬN DỤNG</h2>
+    <div class="assignments">
+        <div class="https://www.canva.com/design/DAG5A-TDuu8/ZiqcEJ-iTtzGv2YpCW4T_w/edit?utm_content=DAG5A-TDuu8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><a href="BÀI 8.html" target="_blank">Bài 8</a></div>
+        <div class="https://www.canva.com/design/DAG5A-TDuu8/ZiqcEJ-iTtzGv2YpCW4T_w/edit?utm_content=DAG5A-TDuu8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><a href="BÀI 9.html" target="_blank">Bài 9</a></div>
+        <div class="https://www.canva.com/design/DAG5A-TDuu8/ZiqcEJ-iTtzGv2YpCW4T_w/edit?utm_content=DAG5A-TDuu8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"><a href="BÀI 10.html" target="_blank">Bài 10</a></div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="form-container">
+        <h2>Contact Form</h2>
+        <form>
+            <input type="text" placeholder="Họ và tên" required>
+            <input type="date" placeholder="Ngày sinh" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Sở thích" rows="3"></textarea>
+            <textarea placeholder="Hoạt động gần đây" rows="3"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
