@@ -9,20 +9,6 @@
     0% { transform: translateX(0); }
     100% { transform: translateX(500px); } /* bay 500px sang phải */
 }
-	   const bullet = document.createElement("div");
-bullet.style.width = "10px";
-bullet.style.height = "10px";
-bullet.style.background = "red";
-bullet.style.position = "absolute";
-bullet.style.left = "100px"; // vị trí xuất hiện
-bullet.style.top = "200px";
-bullet.style.borderRadius = "50%";
-bullet.style.animation = "bulletFly 1s linear forwards";
-document.body.appendChild(bullet);
-
-setTimeout(() => {
-    bullet.remove();
-}, 1000);
 
         body {
             font-family: Poppins, sans-serif;
@@ -81,6 +67,20 @@ setTimeout(() => {
             color: #ff6600;
         }
     </style>
+	 const bullet = document.createElement("div");
+bullet.style.width = "10px";
+bullet.style.height = "10px";
+bullet.style.background = "red";
+bullet.style.position = "absolute";
+bullet.style.left = "100px"; // vị trí xuất hiện
+bullet.style.top = "200px";
+bullet.style.borderRadius = "50%";
+bullet.style.animation = "bulletFly 1s linear forwards";
+document.body.appendChild(bullet);
+
+setTimeout(() => {
+    bullet.remove();
+}, 1000);
 </head>
 <body>
 <div class="card">
@@ -100,6 +100,7 @@ setTimeout(() => {
 </body>
 
 </html>
+
 
 
 
