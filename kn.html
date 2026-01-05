@@ -5,86 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thành viên 3</title>
+	<img id="dragon" src="dragon1.png" style="display:none; position:absolute; top:100px; left:0; width:150px;">
+	<img id="fire" src="fire.png" style="display:none; position:absolute; top:120px; left:50px; width:50px;">
    <style>
-	   #dragon{
-    position: fixed;
-    bottom: 25%;
-    left: -300px;
-    width: 280px;
-    pointer-events: none;
-    z-index: 9999;
-    display: none;
-}
-
+	  <style>
 @keyframes dragonFly {
-    0% {
-        transform: translateX(0) scale(0.8);
-        opacity: 0;
-    }
-    10% {
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(140vw) scale(1.1);
-        opacity: 0;
-    }
-
-        body {
-            font-family: Poppins, sans-serif;
-            background: linear-gradient(to bottom, #e3f2fd, #ffffff);
-            padding: 40px;
-            animation: fade 1s;
-        }
-        @keyframes fade { 
-            from {opacity: 0;} 
-            to {opacity: 1;} 
-        }
-        .card {
-            max-width: 600px;
-            margin: auto;
-            background: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-            text-align: center;
-        }
-        img {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-        h1, h2, p {
-            color: #333;
-        }
-        .button-link {
-            display: inline-block;
-            margin-top: 25px;
-            padding: 12px 25px;
-            font-size: 18px;
-            color: #fff;
-            background-color: #0077ff;
-            border-radius: 8px;
-            text-decoration: none;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            transition: 0.3s;
-        }
-        .button-link:hover {
-            background-color: #ff6600;
-        }
-        .back-link {
-            margin-top: 20px;
-            display: block;
-            font-size: 16px;
-            color: #0077ff;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-        .back-link:hover {
-            color: #ff6600;
-        }
+    0% { left: 0; top: 100px; }
+    100% { left: 90%; top: 100px; }
+}
+@keyframes fireShoot { 
+    0% { opacity: 1; transform: translateX(0); }
+    100% { opacity: 0; transform: translateX(300px); }
+}
+</style>
     </style>
 </head>
 <body>
@@ -103,20 +36,36 @@
     <a href="index.html">⬅ Quay lại trang chính</a>
 </div>
 <script>
+	
 window.addEventListener("load", () => {
     const dragon = document.getElementById("dragon");
-    dragon.style.display = "block";
-    dragon.style.animation = "dragonFly 1.8s linear forwards";
+    const fire = document.getElementById("fire");
 
+    // Hiển thị rồng
+    dragon.style.display = "block";
+    dragon.style.animation = "dragonFly 7.4s linear forwards"; // Đã tăng 5.6s
+
+   
+    fire.style.display = "block";
+    fire.style.animation = "fireShoot 1s linear forwards"; // thời gian bay lửa
+
+    // Ẩn lửa sau khi bay
+    setTimeout(() => {
+        fire.style.display = "none"; 
+    }, 1000); // 
+
+    // Ẩn rồng sau khi bay xong
     setTimeout(() => {
         dragon.style.display = "none";
-    }, 1800);
+    }, 7400); // 7.4s = thời gian bay rồng
 });
+</script>
 </script>
 
 </body>
 
 </html>
+
 
 
 
